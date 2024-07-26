@@ -1,0 +1,62 @@
+INSERT INTO pokemones (id, nombre, tipo, habilidad, hp, ataque, defensa, velocidad) VALUES
+(1, 'Pikachu', 'Eléctrico', 'Electricidad Estática', 35, 55, 40, 90),
+(2, 'Charmander', 'Fuego', 'Mar Llamas', 39, 52, 43, 65),
+(3, 'Bulbasaur', 'Planta/Veneno', 'Espesura', 45, 49, 49, 45),
+(4, 'Squirtle', 'Agua', 'Torrente', 44, 48, 65, 43),
+(5, 'Jigglypuff', 'Normal/Hada', 'Gran Encanto', 115, 45, 20, 20),
+(6, 'Meowth', 'Normal', 'Recogida', 40, 45, 35, 90),
+(7, 'Psyduck', 'Agua', 'Humedad', 50, 52, 48, 55),
+(8, 'Machop', 'Lucha', 'Agallas', 70, 80, 50, 35),
+(9, 'Magnemite', 'Eléctrico/Acero', 'Imán', 25, 35, 70, 45),
+(10, 'Gastly', 'Fantasma/Veneno', 'Levitar', 30, 35, 30, 80),
+(11, 'Onix', 'Roca/Tierra', 'Cabeza Roca', 35, 45, 160, 70),
+(12, 'Cubone', 'Tierra', 'Pararrayos', 50, 50, 95, 35),
+(13, 'Rhyhorn', 'Tierra/Roca', 'Cabeza Roca', 80, 85, 95, 25),
+(14, 'Horsea', 'Agua', 'Francotirador', 30, 40, 70, 60),
+(15, 'Staryu', 'Agua', 'Cura Natural', 30, 45, 55, 85),
+(16, 'Scyther', 'Bicho/Volador', 'Enjambre', 70, 110, 80, 105),
+(17, 'Eevee', 'Normal', 'Fuga', 55, 55, 50, 55),
+(18, 'Snorlax', 'Normal', 'Inmunidad', 160, 110, 65, 30),
+(19, 'Dratini', 'Dragón', 'Mudar', 41, 64, 45, 50),
+(20, 'Chikorita', 'Planta', 'Espesura', 45, 49, 65, 45),
+(21, 'Cyndaquil', 'Fuego', 'Mar Llamas', 39, 52, 43, 65),
+(22, 'Totodile', 'Agua', 'Torrente', 50, 65, 64, 43),
+(23, 'Pichu', 'Eléctrico', 'Electricidad Estática', 20, 40, 15, 60),
+(24, 'Togepi', 'Hada', 'Gran Encanto', 35, 20, 65, 20),
+(25, 'Mareep', 'Eléctrico', 'Piel Tosca', 55, 40, 40, 35),
+(26, 'Marill', 'Agua/Hada', 'Grosor Graso', 70, 20, 50, 40),
+(27, 'Hoppip', 'Planta/Volador', 'Clorofila', 35, 35, 40, 50),
+(28, 'Wobbuffet', 'Psíquico', 'Sombra Trampa', 190, 33, 58, 33),
+(29, 'Shuckle', 'Bicho/Roca', 'Robustez', 20, 10, 230, 5),
+(30, 'Swinub', 'Hielo/Tierra', 'Manto Níveo', 50, 50, 40, 50);
+
+INSERT INTO entrenadores (id, nombre, edad, ciudad) VALUES
+(1, 'Ash', 10, 'Pueblo Paleta'),
+(2, 'Misty', 12, 'Ciudad Celeste'),
+(3, 'Brock', 15, 'Ciudad Plateada'),
+(4, 'Gary', 10, 'Pueblo Paleta'),
+(5, 'Jessie', 18, 'Desconocida'),
+(6, 'James', 18, 'Desconocida'),
+(7, 'Dawn', 10, 'Pueblo Hojaverde'),
+(8, 'May', 10, 'Ciudad Petalia'),
+(9, 'Serena', 10, 'Ciudad Vaniville'),
+(10, 'Paul', 11, 'Ciudad Veilstone');
+
+INSERT INTO entrenador_pokemon (id, entrenador_id, pokemon_id) VALUES
+(1, 1, 1), (2, 1, 2), (3, 1, 3),
+(4, 2, 4), (5, 2, 5), (6, 2, 6),
+(7, 3, 7), (8, 3, 8), (9, 3, 9),
+(10, 4, 10), (11, 4, 11), (12, 4, 12),
+(13, 5, 13), (14, 5, 14), (15, 5, 15),
+(16, 6, 16), (17, 6, 17), (18, 6, 18),
+(19, 7, 19), (20, 7, 20), (21, 7, 21),
+(22, 8, 22), (23, 8, 23), (24, 8, 24),
+(25, 9, 25), (26, 9, 26), (27, 9, 27),
+(28, 10, 28), (29, 10, 29), (30, 10, 30);
+
+INSERT INTO batallas (id, fecha, entrenador1_id, entrenador2_id, pokemon1_id, pokemon2_id, resultado) VALUES
+(1, '2024-07-20', 1, 2, 1, 4, 'Entrenador 1 gana'),
+(2, '2024-07-21', 3, 4, 7, 10, 'Entrenador 2 gana'),
+(3, '2024-07-22', 5, 6, 13, 16, 'Entrenador 1 gana'),
+(4, '2024-07-23', 7, 8, 19, 22, 'Empate'),
+(5, '2024-07-24', 9, 10, 25, 28, 'Entrenador 2 gana');
